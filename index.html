@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NPM Dependency Visualizer</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>NPM Dependency Visualizer</h1>
+      <p>
+        Upload your package-lock.json file to visualize dependencies and find
+        duplicate package versions. Or run
+        <code>npm list --all --json > dependency_graph.json</code>
+        to generate a dependency graph file.
+      </p>
+    </header>
+
+    <div class="controls">
+      <div class="file-input-container">
+        <label for="file-input" class="file-input-label"
+          >Select package-lock.json</label
+        >
+        <input type="file" id="file-input" accept=".json" />
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search packages..." />
+      </div>
+      <div class="expand-buttons">
+        <button onclick="expandAll()">Expand All</button>
+        <button onclick="collapseAll()">Collapse All</button>
+      </div>
+    </div>
+
+    <div id="stats-container">
+      <div class="stats-item">
+        <div class="stats-count">
+          <span id="package-count">0</span>/<span id="package-count-total"
+            >0</span
+          >
+        </div>
+        <div class="stats-label">Packages with duplicate versions</div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="tree-view">
+          <div id="tree-container"></div>
+        </div>
+        <div class="details-view">
+          <div id="details-panel">
+            <p class="placeholder">Select a package to view details</p>
+          </div>
+          <div id="conflict-panel">
+            <h3>Version Conflicts</h3>
+            <div id="conflict-list"></div>
+          </div>
+          <div id="dupes-container"></div>
+        </div>
+      </div>
+    </main>
+
+    <div id="loader">
+      <div class="loader-content">
+        <div class="spinner"></div>
+        <div id="loader-message">Loading...</div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Drop your package-lock.json file anywhere to visualize</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
