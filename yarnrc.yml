@@ -1,0 +1,4 @@
+packageExtensions:
+  "rollup-plugin-postcss@*":
+    peerDependencies:
+      "postcss": "*"

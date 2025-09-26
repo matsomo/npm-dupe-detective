@@ -1,0 +1,94 @@
+.tree-node {
+  margin-bottom: 5px;
+}
+
+.tree-content {
+  padding: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tree-content:hover {
+  background-color: var(--hover-color);
+}
+
+.tree-content.selected {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.tree-toggle,
+.tree-toggle-placeholder {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tree-name {
+  flex: 1;
+  margin-left: 5px;
+  word-break: break-all;
+}
+
+.tree-version {
+  color: #666;
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
+.selected .tree-version {
+  color: #eee;
+}
+
+.tree-children {
+  margin-left: 20px;
+  border-left: 1px dotted var(--border-color);
+  padding-left: 10px;
+}
+
+.root-name {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.highlight {
+  background-color: var(--highlight-color);
+  font-weight: bold;
+}
+
+.version-match {
+  background-color: var(--highlight-color) !important;
+}
+
+.version-non-match {
+  opacity: 0.5;
+}
+
+.tree-content.selected .tree-version {
+  color: white;
+}
+
+.conflict {
+  color: var(--conflict-color);
+  font-weight: bold;
+}
+
+/* Version filter buttons */
+.filter-version-btn {
+  margin-left: 10px;
+  font-size: 0.8em;
+  padding: 3px 8px;
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #0069d9;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.filter-version-btn:hover {
+  background-color: #0069d9;
+}

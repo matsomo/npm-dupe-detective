@@ -1,3 +1,4 @@
+import "./css/index.css";
 import "./shared.js";
 import { setupFileHandlers, loadFileFromPath } from "./fileHandler.js";
 import { setupUIHandlers } from "./uiController.js";

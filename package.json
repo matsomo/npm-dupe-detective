@@ -19,6 +19,11 @@
   },
   "homepage": "https://github.com/matsomo/npm-dupe-detective#readme",
   "devDependencies": {
-    "rollup": "^4.52.2"
+    "postcss": "8.5.6",
+    "postcss-import": "^16.1.1",
+    "postcss-preset-env": "^10.4.0",
+    "rollup": "4.52.2",
+    "rollup-plugin-postcss": "4.0.2",
+    "sass": "^1.93.2"
   }
 }

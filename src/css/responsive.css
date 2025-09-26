@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .tree-view,
+  .details-view {
+    max-height: 50vh;
+  }
+
+  .tree-view {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+}

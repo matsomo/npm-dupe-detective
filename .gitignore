@@ -1,5 +1,4 @@
 node_modules/
-bundle.js
 .yarn
 .DS_Store
 .env
@@ -7,4 +6,5 @@ bundle.js
 .cache/
 dist/
 .pnp*
+bundle.*
 

@@ -1,0 +1,51 @@
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.tree-view {
+  flex: 1;
+  border-right: 1px solid var(--border-color);
+  overflow: auto;
+  max-height: 70vh;
+  padding: 15px;
+}
+
+.details-view {
+  flex: 1;
+  padding: 15px;
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
+  font-size: 0.9em;
+}
