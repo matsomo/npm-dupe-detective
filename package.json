@@ -1,0 +1,24 @@
+{
+  "name": "npm-dupe-detective",
+  "version": "1.0.0",
+  "description": "This app will find duplicates in your NPM dependency graph and show a list of versions.",
+  "packageManager": "yarn@4.10.3",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rollup --config",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matsomo/npm-dupe-detective.git"
+  },
+  "author": "Mats Aadahl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matsomo/npm-dupe-detective/issues"
+  },
+  "homepage": "https://github.com/matsomo/npm-dupe-detective#readme",
+  "devDependencies": {
+    "rollup": "^4.52.2"
+  }
+}
